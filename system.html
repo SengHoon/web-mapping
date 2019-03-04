@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+  body{
+    background-color:white;
+    color:black;
+  }
+  h1{
+    text-align: center; /*중앙정렬*/
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:10px;
+    padding-bottom:30px;
+  }
+  ol{
+
+    margin:0px;
+    margin-left:10px;
+    border-right:1px solid gray;
+    width:150px;
+    height:300px;
+    padding-top:20px;
+  }
+  div{
+      margin-left:10px;
+  }
+  p{
+    margin-left:10px;
+  }
+  .content{
+    display:grid;
+    grid-template-columns:200px 1fr;
+  }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<h1>에이펙스 레전드</h1>
+  </head>
+  <body>
+    <div class="content">
+    <ol>
+      <li><a href="ex.html">개요</a></li>
+      <li><a href="배경설정.html">배경 설정</a></li>
+      <li><a href="system.html">시스템 요구 사항</a></li>
+      <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='darkgray';
+      document.querySelector('body').style.color='white';">
+      <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';">
+    </ol>
+    <div>
+      <h3>시스템 요구 사항</h3>
+    <p>  최소 사양<br>
+OS: 64-bit Windows 7<br>
+CPU: Intel Core i3-6300 / AMD FX-4350<br>
+RAM: 6GB<br>
+GPU: NVIDIA GeForce GT 640 / Radeon HD 7700<br>
+GPU RAM: 1GB<br><br>
+권장 사양<br>
+OS: 64-bit Windows 10<br>
+CPU: Intel i5 3570K or equivalent<br>
+RAM: 8GB<br>
+GPU: Nvidia GeForce GTX 970 / AMD Radeon R9 290<br>
+GPU RAM: 8GB<br><br>
+
+상기한 바와 같이 그래픽 성능을 상당히 요구하는 게임이다. 최소 사양으로 플레이 시 그래픽 칩셋의 한계 때문에 최저옵션에 해상도도 최대한 낮게 설정해도 30프레임 방어가 불가능하다. 하지만 GTX750TI에서는 어느정도 옵션타협을 본다면 1080P에서도 원활하게 굴러간다. 참고
+
+생각 외로 CPU 리소스를 그렇게 크게 요구하지 않는다. 상기된 최저 사양의 CPU급 이상만 되면 그래픽 칩셋 사양만 충족할 시 상대적으로 안정적인 플레이가 가능할 것으로 보인다.[5]
+
+AMD Phenom CPU를 비롯한 SSE 4.1 미지원 구형 CPU에서는 그래픽카드와 관계없이 현재 실행이 불가능하다.
+      </p>
+      </div>
+      </div>
+  </body>
+</html>

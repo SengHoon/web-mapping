@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+  body{
+    background-color:white;
+    color:black;
+  }
+  h1{
+    text-align: center; /*중앙정렬*/
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:10px;
+    padding-bottom:30px;
+  }
+  ol{
+
+    margin:0px;
+    margin-left:10px;
+    border-right:1px solid gray;
+    width:150px;
+    height:300px;
+    padding-top:20px;
+  }
+  div{
+      margin-left:10px;
+  }
+  p{
+    margin-left:10px;
+  }
+  .content{
+    display:grid;
+    grid-template-columns:200px 1fr;
+  }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<h1>에이펙스 레전드</h1>
+  </head>
+  <body>
+    <div class="content">
+    <ol>
+      <li><a href="ex.html">개요</a></li>
+      <li><a href="배경설정.html">배경 설정</a></li>
+      <li><a href="system.html">시스템 요구 사항</a></li>
+      <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='dimgray';
+      document.querySelector('body').style.color='white';">
+      <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';">
+      <input type="button" value="night" onclick="
+      var target=document.querySelector('body');
+      if(target.style.color==='black'){
+        this.value='day';
+        target.style.backgroundColor='dimgray';
+        target.style.color='white';
+      }else{
+        this.value='night';
+        target.style.backgroundColor='white';
+        target.style.color='black';
+      }
+      ">
+    </ol>
+    <div>
+      <h3>배경 설정</h3>
+    <p>
+      타이탄폴 시리즈와 같은 세계관을 가지고 있으며, 시간대는 타이탄폴2 이후로 30년 후이다. 공식 홈페이지 설명 글에서 짤막한 배경 설정을 알 수 있다. 타이탄폴 세계관에 등장하는 여러 행성들이 존재하는 우주 지역인 프론티어에서는 IMC와 저항군사이의 거대한 전쟁이 일어났었는데 30년 뒤인 에이펙스 레전드에서는 이미 전쟁이 끝난 시점이다. 프론티어 외곽에 위치한 외딴 행성들의 집합체인 "아웃랜드"라고 불리는 곳이 있으며, 게임의 배경이 되는 킹스 캐년 역시 이 아웃랜드에 속한 행성에 존재하는 섬이다. 바다쪽을 보면 공룡 크기의 괴물이 있는 등 지구상에서 볼 수 없는 생명체들도 있다.
+
+  전쟁이 끝난 후 IMC와 저항군은 철수할 때 행성의 자원들을 모조리 가져가버렸고 프론티어 행성들의 원주민들은 부양할 방법이 없어 다른 행성으로 이주할 수밖에 없었다. 아웃랜드는 프론티어 외곽에 위치한 곳이기 때문에 전쟁의 영향을 거의 받지 않았고 자원과 기회로 가득 차있는 곳이었기 때문에 전쟁의 피해를 입은 프론티어 원주민들은 아웃랜드로 이주하게 된 것이다.
+
+  하지만 아웃랜드는 사방에 위험이 도사리고 있었고 개척자, 탐험가, 무법자들의 끝 없는 권력 투쟁이 가득한 곳이 되었고 지금은 프론티어의 모든 구석에서 온 '레전드'라 불리는 자들이 돈, 명성, 영광을 위해 경쟁하는 피의 요새인 '에이펙스 게임'에 참여하고 있다.
+
+  '에이펙스 게임'은 타이탄폴과 타이탄폴 2의 등장인물이기도 한 쿠벤 블리스크가 이끄는 용병 부대인 '에이펙스 프레데터'가 주최하고 있는 일종의 서바이벌 게임 대회로, 3명이 한 팀으로 여러 부대가 참가하여 최후까지 생존한 부대가 '챔피언'이 되어 거액의 상금을 얻는 게임이다. 인트로에서 나오는 신문 기사들을 보면 실시간으로 중계까지 하고 있어 수백만명의 시청자가 볼 정도로 인기인 대회이다. 또한 설정상 이 게임에서 전투 중에 죽어도 부활이 가능하다고 한다.[4] 하지만 각 레전드들의 배경 설정 등을 읽어보면 모종의 사고 등으로 정말로 영원히 죽어버리는 일도 종종 일어나는 듯 하며, 에이펙스 게임 참여자들이 항상 죽음의 위험을 곁에 두고 있다는 암시가 곳곳에 나온다.  </p>
+      </div>
+      </div>
+  </body>
+</html>
