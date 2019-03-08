@@ -8,18 +8,18 @@
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7hht6nnira"></script>
 </head>
 <body>
-<div id="map" style="width:1500px;height:900px;"></div>
+<div id="map" style="width:1000px;height:900px;"></div>
 
 <script>
 var mapOptions = {
-    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    center: new naver.maps.LatLng(37.299203, 127.017741),
     zoom: 10
 };
 
 var map = new naver.maps.Map('map', mapOptions);
-    
+
 var marker = new naver.maps.Marker({
-position: new naver.maps.LatLng(37.3595704, 127.105399),
+position: new naver.maps.LatLng(37.299203, 127.017741),
 map: map
 });
 </script>
