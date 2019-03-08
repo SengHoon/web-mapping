@@ -16,18 +16,32 @@ var mapOptions = {
     zoom: 5
 };
 
+class Mapmarker {
+  constructor(latitude,longitude,name,tell) {
+    this.latitude=latitude;
+    this.longitude=longitude;
+    this.name=name;
+    this.tell=tell;
+  }
+
+  markmap(){
+    var marker= new naver.maps.Marker({
+    position: new naver.maps.LatLng(this.latitude, this.longtitude),
+    map: map
+    });
+  }
+}
 var map = new naver.maps.Map('map', mapOptions);
+
 
 var marker0 = new naver.maps.Marker({
 position: new naver.maps.LatLng(37.291609, 127.018245),
 map: map
 }); //아라김밥
 
-var marker0 = new naver.maps.Marker({
-position: new naver.maps.LatLng(37.292848, 127.031549),
-map: map
-}); //왕김밥천국
-
+var pos[3];
+pos[1]=new Mapmarker(37.292848, 127.031549,'왕김밥천국','0312545237');
+pos[1].markmap();
 </script>
 </body>
 </html>
